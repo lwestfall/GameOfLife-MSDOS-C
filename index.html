@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <style>
+      html,
+      body,
+      #jsdos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.css"
+    />
+    <script src="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.js"></script>
+  </head>
+  <body>
+    <div id="jsdos" />
+    <script>
+      emulators.pathPrefix = '/v7/build/releases/latest/js-dos/';
+      Dos(document.getElementById('jsdos')).run(
+        'https://github.com/lwestfall/GameOfLife-MSDOS-C/blob/main/gol.jsdos'
+      );
+    </script>
+  </body>
+</html>
